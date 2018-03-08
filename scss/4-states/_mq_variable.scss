@@ -1,0 +1,17 @@
+//breakpoint-wrapper
+$wrapper-breakpoint: (
+  //(wrapper-width) : (wrapper-value)
+  //widthnya : value 
+    
+    991px: 768px,
+    768px: 100%,
+    767px: 100%,
+);
+
+@each $wrapper-width, $wrapper-value in $wrapper-breakpoint{
+  @media screen and (max-width: $wrapper-width) {
+    .wrapper {
+      width: $wrapper-value;
+    }
+  }
+}

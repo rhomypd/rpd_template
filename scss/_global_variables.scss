@@ -1,0 +1,26 @@
+//GLOBAL VARIABLES
+//colors
+$mainColor: #d92129;
+$mainColor2 : #464646;
+
+$mainDark15: darken($mainColor,15%);
+
+$blackColor : #2b2b2b;
+$abuColor:#ebebeb;
+
+$greyColor1: #707070;
+$greyColor2: #898989;
+
+$normalFont: 14px;
+$bigFont: $normalFont + 10;
+$smallFont: $normalFont - 3;
+
+//layouts
+$wrapWidth: 640px;
+$mainPadding:15px;
+
+//path
+$imagepath: "../img/";
+@import "1-base/fonts";
+ 
+ 

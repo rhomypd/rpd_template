@@ -1,0 +1,91 @@
+//GLOBAL MIXINS*/
+
+// @mixin sample {
+// font-size: 12px;
+// }
+// p {
+//    @include sample;
+// }
+
+@mixin bRadiusRHW ($rad, $height, $width) {
+  border-radius: $rad; 
+  -moz-border-radius: $rad;
+  -webkit-border-radius: $rad;
+  height: $height;
+  width: $width;
+}
+
+@mixin bRadiusEach ($rad1, $rad2, $rad3, $rad4) {
+  border-radius: $rad1 $rad2 $rad3 $rad4; 
+  -moz-border-radius: $rad1 $rad2 $rad3 $rad4;
+  -webkit-border-radius:$rad1 $rad2 $rad3 $rad4;
+}
+
+@mixin absCenterHV{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absCenterV{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin absCenterH{
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+@mixin BgImageCover ($bg_height, $bg_width){
+  background-position: top center;
+  background-size: cover!important;
+  height: $bg_height;
+  width: $bg_width;
+}
+
+@mixin arrowUpCW ($arrowColor, $widthArrow){
+  width: 0; 
+  height: 0; 
+  border-left: $widthArrow solid transparent;
+  border-right: $widthArrow solid transparent;
+  border-bottom: $widthArrow solid $arrowColor;
+}
+
+@mixin arrowDownCW ($arrowColor, $widthArrow){
+  width: 0; 
+  height: 0; 
+  border-left: $widthArrow solid transparent;
+  border-right: $widthArrow solid transparent;
+  border-top: $widthArrow solid $arrowColor;
+}
+
+@mixin arrowRightCW ($arrowColor, $widthArrow){
+  width: 0; 
+  height: 0; 
+  border-top: $widthArrow solid transparent;
+  border-bottom: $widthArrow solid transparent;
+  border-left: $widthArrow solid $arrowColor;
+}
+
+@mixin arrowLeftCW ($arrowColor, $widthArrow){
+  width: 0; 
+  height: 0; 
+  border-top: $widthArrow solid transparent;
+  border-bottom: $widthArrow solid transparent;
+  border-right: $widthArrow solid $arrowColor;
+}
+
+//@mixin mq($wrapWidth) {
+//  .wrapper {
+//    width: $wrapWidth;
+//  }
+//}
+//
+//@media (max-width: 1199px) {
+//    @include mq($wrapWidth: 95%);
+//}

@@ -1,0 +1,36 @@
+/*FONTS*/
+//path font 
+$fontpath: "../fonts/open-sans/";
+
+//fontvariables
+$fontRegular:"OpenSansReg";
+$fontBold:"OpenSansBold";
+$fontLight:"OpenSansLight";
+
+@font-face {
+    font-family: $fontRegular;
+    src: url('#{$fontpath}/OpenSans-Regular.woff2') format('woff2'),
+         url('#{$fontpath}/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+
+@font-face {
+    font-family: $fontBold;
+    src: url('#{$fontpath}/OpenSans-Bold.woff2') format('woff2'),
+         url('#{$fontpath}/OpenSans-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: $fontLight;
+    src: url('#{$fontpath}/OpenSans-Light.woff2') format('woff2'),
+         url('#{$fontpath}/OpenSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+ 

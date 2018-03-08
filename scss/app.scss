@@ -1,0 +1,27 @@
+/*RPD : RHOMY PRAMA DHIEKA : www.rpd.web.id */
+
+//IMPORT VARIABLE DAN MIXINS
+@import "global_variables";
+@import "global_mixins";
+@import "0-plugins/dir-plugins";
+@import "1-base/dir-base";
+@import "2-layout/dir-layout";
+@import "3-modules/dir-modules";
+@import "4-states/dir-states";
+@import "5-themes/dir-themes";
+@import "6-additional/additional";
+
+
+.back-to-top {
+  span {
+    color: #fff;
+  }
+  background: rgba(85, 85, 85, 0.5);
+  padding: 10px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 7px;
+}
+ 
+

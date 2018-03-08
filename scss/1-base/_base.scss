@@ -1,0 +1,17 @@
+body,
+html {
+  font-family: $fontRegular;
+  overflow-x: hidden;
+  font-size: $normalFont;
+}
+
+p, strong{
+  margin-bottom: 15px;
+  line-height: 1.4em;
+}
+
+strong{
+  font-family: $fontBold;
+}
+
+
